@@ -10,7 +10,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL
 const AMOY_RPC_URL = process.env.AMOY_RPC_URL
 
-/** @type import('hardhat/config').HardhatUserConfig */
+/** @type import('hardhat/config').HardhatUserConfig   */
 module.exports = {
   solidity:{
     compilers: [
