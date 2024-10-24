@@ -105,3 +105,29 @@ AMOY_RPC_URL
 13. Check nft status again：`npx hardhat check-nft --network sepolia`
 
 For more related content, please refer to the README.md of [Web3_tutorial](https://github.com/smartcontractkit/Web3_tutorial_Chinese).
+
+
+
+
+npx hardhat deploy --network sepolia --tags soucechain
+Deploying the nft contract
+deploying "MyToken" (tx: 0xb4969d31f0722f4d9b8e4833d7d3baf3f38b50dabf19659d15c3d247d28001eb)...: deployed at 0xc198bc72B26D748106aC7B20a41fb3028bE0Be41 with 2649530 gas
+MyToken is deployed!
+non local environment: sourcechain router: 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59, link token: 0x779877A7B0D9E8603169DdbD7836e478b4624789
+NFT address: 0xc198bc72B26D748106aC7B20a41fb3028bE0Be41
+deploying the lmn pool
+deploying "NFTPoolLockAndRelease" (tx: 0xc85a8b7847b18ff736f024c7b974075ece355928343e881337fe40e00e418a24)...: deployed at 0x9B4a8B63787DaFA47E485377816847e586c08963 with 2564601 gas
+lmn pool deployed
+
+npx hardhat deploy --network amoy --tags destchain
+Nothing to compile
+deploying wrapped NFT on destination chain
+deploying "WrappedNFT" (tx: 0x038845252064cd3c243c8af764f24eec7bedeb4d0adff8a7d1a883387265125a)...: deployed at 0xc198bc72B26D748106aC7B20a41fb3028bE0Be41 with 2661107 gas
+deployed wrapped nft
+get the parameters: 0x9C32fCB86BF0f4a1A8921a9Fe46de3198bb884B2, 0x0Fd9e8d3aF1aaee056EB9e802c3A762a667b1904, 0xc198bc72B26D748106aC7B20a41fb3028bE0Be41
+deploying nftPoolBurnAndMint
+deploying "NFTPoolBurnAndMint" (tx: 0x7f10cf5dbb77408b720cb9d8bf0378354317624214dde36e2c16fe6758f32820)...: deployed at 0x9B4a8B63787DaFA47E485377816847e586c08963 with 2489968 gas
+nftPoolBurnAndMint deployed
+
+# 
+npx hardhat check-nft --network sepolia
