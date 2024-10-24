@@ -142,3 +142,40 @@ npx hardhat check-nft --network sepolia
 
 # mint nft
 npx hardhat mint-nft --network sepolia
+
+
+
+deployer is 0x26afb187F395630b5af966AD8Ad9Cc9C321135fE
+NFTPoolBurnAndMint address on destination chain is 0x9B4a8B63787DaFA47E485377816847e586c08963
+destination chain selector is 16281711391670634445
+nftPoolLockAndRelease.target: 0x9B4a8B63787DaFA47E485377816847e586c08963
+balance before: 1000000000000000000
+balance after: 1000000000000000000
+approve successfully
+0, 0x26afb187F395630b5af966AD8Ad9Cc9C321135fE, 16281711391670634445, 0x9B4a8B63787DaFA47E485377816847e586c08963
+NFT locked and crossed, transaction hash is 0xb724515547e6afd65810dd76f8fca438c9fa2277953efa58e66c5f63ae0fce3b
+
+
+
+
+
+@lsPrivateGit ➜ /workspaces/Web3_tutorial_Chinese/lesson-6 (main) $ npx hardhat check-wrapped-nft --tokenid 0 --network amoy
+checking status of ERC-721
+there are 1 tokens under the collection
+TokenId: 0, Owner is 0x26afb187F395630b5af966AD8Ad9Cc9C321135fE
+
+
+@lsPrivateGit ➜ /workspaces/Web3_tutorial_Chinese/lesson-6 (main) $ npx hardhat burn-and-cross --tokenid 0 --network amoy
+transfering 10 LINK token to NFTPoolBurnAndMint contract
+NFT burned and crossed with txhash 0x4932c216562744e5740c679cfb0313e8aad2b34e6b55387ab77d60b639404ce6
+
+
+@lsPrivateGit ➜ /workspaces/Web3_tutorial_Chinese/lesson-6 (main) $ npx hardhat check-nft --network sepolia
+checking status of ERC-721
+there are 2 tokens under the collection
+TokenId: 0, Owner is 0x26afb187F395630b5af966AD8Ad9Cc9C321135fE
+TokenId: 1, Owner is 0x26afb187F395630b5af966AD8Ad9Cc9C321135fE
+
+
+
+
