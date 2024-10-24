@@ -107,7 +107,15 @@ AMOY_RPC_URL
 For more related content, please refer to the README.md of [Web3_tutorial](https://github.com/smartcontractkit/Web3_tutorial_Chinese).
 
 
+rpc-url:
+https://eth-sepolia.g.alchemy.com/v2/3Zht5XOGVQOIzUesGArDe8sfdi2lbgCB
 
+https://polygon-amoy.g.alchemy.com/v2/3Zht5XOGVQOIzUesGArDe8sfdi2lbgCB
+
+- sepolia 查找  Router address、 路由网络 linkToken、 链选择器 chain selector
+https://docs.chain.link/ccip/supported-networks/v1_2_0/testnet#ethereum-sepolia
+
+# 部署合约
 
 npx hardhat deploy --network sepolia --tags soucechain
 Deploying the nft contract
@@ -129,5 +137,8 @@ deploying nftPoolBurnAndMint
 deploying "NFTPoolBurnAndMint" (tx: 0x7f10cf5dbb77408b720cb9d8bf0378354317624214dde36e2c16fe6758f32820)...: deployed at 0x9B4a8B63787DaFA47E485377816847e586c08963 with 2489968 gas
 nftPoolBurnAndMint deployed
 
-# 
+# 检查nft
 npx hardhat check-nft --network sepolia
+
+# mint nft
+npx hardhat mint-nft --network sepolia
